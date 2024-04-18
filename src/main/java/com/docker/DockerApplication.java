@@ -14,7 +14,6 @@ public class DockerApplication {
 		return "Hello Docker CI";
 	}
 
-
 	public static void main(String[] args) {
 		SpringApplication.run(DockerApplication.class, args);
 	}
