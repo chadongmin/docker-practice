@@ -11,7 +11,7 @@ public class DockerApplication {
 
 	@RequestMapping("/")
 	public String home(){
-		return "Hello Docker CI";
+		return "Hello Docker CI - after using github action!!!";
 	}
 
 	public static void main(String[] args) {
