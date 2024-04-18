@@ -1,8 +1,8 @@
 FROM eclipse-temurin:17-jdk
 
-ARG JAR_FILE=.build/libs/*.jar
+ARG JAR_FILE=build/libs/*.jar
 
-COPY ${JAR_FILE} /app.jar
+COPY ${JAR_FILE} .
 # 빌드된 jar 파일을 app.jar이란 이름으로 container에 복사
 
 ENTRYPOINT ["java","-jar","/app.jar"]
